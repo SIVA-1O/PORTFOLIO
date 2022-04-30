@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.bg-cover{
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('234990.jpg');
+    background-position:center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    padding:5px 0;
+}
+nav ul li a:hover{
+    color: #34ace3;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #34ace3;
+    transition: .5s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+#boku{
+   max-height:100px;
+}
+.about{
+    position:absolute;
+    top:20%;
+    right:70%;
+    padding:0 20px ;
+}
+.about span{
+color:white;
+font-family:"Tapsery";
+
+}
+.about h4{
+color:white;
+}
+.about h1 {
+    color: #757575;
+}
+.about p{
+    display: flex;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.border{
+border-style:solid;
+border-color:white;
+
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>MY PORTFOLIO WEB</title>
+</head>
+<body>
+<div>
+<nav class="bg-cover">
+<img src="boku-no-hero-academia-katsuki-bakugou-wallpaper-preview-removebg-preview.png" id="boku" class="border">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">EDUCATION</a></li>
+<li><a href="#">CONTACT</a></li>
+< /ul>
+</nav>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+<div class="about">
+<span> ABOUT ME</span>
+<h4 >HI,I AM </h4>
+<h1>M.SIVASURIYA<h1>
+<p>I am a student at SRM University persuing Computer Science and Engineering</p>
+</div>
+</div>
+</body>
+
+</html>
